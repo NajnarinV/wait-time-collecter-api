@@ -1,0 +1,61 @@
+Vancouver General Hospital
+Patients of ages 17 and older seen
+
+St. Paul's Hospital
+
+Patients of all ages seen
+
+Richmond Hospital
+
+Patients of all ages seen
+
+Lions Gate Hospital
+Patients of all ages seen
+
+Mount Saint Joseph Hospital
+
+Patients of all ages seen
+
+UBC Hospital (UBCH)
+
+Patients of all ages seen
+UBCH is for mild to moderate iliness
+
+City Centre Urgent & Primary Care Centre
+
+Patients of all ages seen
+UPCC is for mild to moderate iliness
+
+North Van Urgent & Primary Care Centre
+
+Patients of all ages seen
+UPCC is for mild to moderate iliness
+
+02:00
+01:15
+01:51
+02:14
+00:44
+00:20
+01:59
+02:02
+
+04:45
+03:45
+03:45
+04:00
+03:15
+03:00
+03:15
+03:15
+
+60 0 0 0 0 O0 0 ®
+
+REACH Urgent and Primary Care Centre
+
+Patients of all ages seen (lab & x-ray offsite)
+
+Call REACH at 604-216-
+3138 for wait times
+
+HR:MIN HR:MIN
