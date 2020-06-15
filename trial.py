@@ -34,6 +34,7 @@ with open("open.csv", 'a') as f:
     writer.writerow(text_list)
 
 
+
     
 
 
