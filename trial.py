@@ -14,24 +14,47 @@ from io import BytesIO
 response = requests.get("http://www.edwaittimes.ca/Shared/Images/PublicDashboard.png")
 png = Image.open(BytesIO(response.content))
 
+prepPNG = png.crop((1200,50,1600,1650))
+
+png_text = pytesseract.image_to_string(prepPNG)
+
+f = open("something.txt", "w")
+f.write(png_text)
+f.close
+
+f = open("something.txt", "r")
+png_list = f.readlines()
+f.close()
+
+def adjusted_wait_times(waitTimes: list):
+    while len(waitTimes)<8:
+        waitTimes.append(" ")
+    
+    return waitTimes
 
 
-png_str = pytesseract.image_to_string(png) 
+hospitalNames = ["Vancouver General Hospital", "St. Pauls Hospital", "Richmond Hospital", "Lions Gate Hospital", "Mount Saint Joseph Hospital", "UBC Hospital","City Centre Urgent Primary Care Centre", "North Vancouver Urgent and Primary Care Centre"]
 
-png_text = open("something.txt", "w+")
-png_text.write(png_str)
-png_text.close()
+combine = dict(zip(hospitalNames, adjusted_wait_times(png_list)))
 
-png_text = open("something.txt", "r")
+for key in combine:
+    if (combine[key][-1] == "\n"):
+        combine[key] = combine[key][:-1]
 
-text_list = png_text.readlines()
-
-png_text.close()
+print(combine)
 
 
-with open("open.csv", 'a') as f:
-    writer = csv.writer(f)
-    writer.writerow(text_list)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
