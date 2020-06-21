@@ -10,4 +10,5 @@ app.config["DEBUG"] = True
 def home():
     return jsonify(combine_lists())
 
-app.run()
+if __name__ == '__main__':
+    app.run()
